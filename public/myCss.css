@@ -1,0 +1,156 @@
+#nomApp{
+    text-align: center;
+    color:#EBE2E0;
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24pt;
+}
+
+h1{
+    font-size: 32pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/******************************   MENU COMPONENT    ******************************************/
+/*Barre de menu*/
+#menu_component{
+    height: 100%;
+    background-color: #292A35;
+    height: calc(100vh);
+}
+/**Onglets**/
+.list-group-item{
+    background-color: #ACADB2;
+    height: 70px;
+    font-size: 16pt;
+    color: white;
+}
+/**SÃ©parateur**/
+.sidebar-separator-title{
+    height: 50px;
+    background-color:#292A35;
+    font-size: 12pt;
+}
+/**Sous-menu**/
+.sous-menu{
+    height: 50px;
+    background-color:#E2D0F7;
+    font-size: 14pt;
+}
+
+/**********************************  TO DO LIST COMPONENT **********************************/
+/***Tous le CSS dans la partie TO DO LIST COMPONENT a été pris du site W3School.com et adapté à  nos besoins****/
+
+.todo_list{
+    margin-top: 15px;
+    margin-right: 30px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.todo_list_title {
+    width: 400px;
+    padding-top: 15px;
+    border: 1px solid grey;
+    color: black;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius:3px ;
+    font-size: 22pt;
+  }
+  
+  .todo_list_title:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+ .todo_list_input{
+    border-radius: 3px;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+  }
+  
+  .todo_list_addBtn {
+    padding: 12px;
+    width: 25%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 3px;
+  }
+  
+  .todo_list_addBtn:hover {
+    background-color: #bbb;
+  } 
+
+.todo_list_ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 1px solid grey;
+    border-radius:3px ;
+    width: 400px;
+  }
+  
+ .todo_list_li{
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 20px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding-left: 50px;
+  }
+  
+  /* Alterner les couleurs des li */
+  .todo_list_li:nth-child(odd) {
+    background: #f9f9f9;
+  }
+  
+  .todo_list_li:hover {
+    background: #ddd;
+  }
+  
+  .todo_list_li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+  }
+  
+.todo_list_check {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+  }
+  
+  .todo_list_check:hover {
+    background-color: greenyellow;
+    color: white;
+  }
+  
+  .todo_list_delete {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+  }
+  
+  .todo_list_delete:hover {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  
+  

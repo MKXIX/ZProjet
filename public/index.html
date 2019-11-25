@@ -1,0 +1,100 @@
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
+    <!-- Notre CSS -->
+    <link rel="stylesheet" href="./myCss.css">
+</head>
+
+<body>
+
+    <!--Barre de naviguation-->
+    <nav class="navbar navbar-expand-lg sticky-top bg-dark navbar-dark">
+        <div id="nomApp">
+            <p>Mon journal</p>
+        </div>
+    </nav>
+
+    <div class="row">
+        <div class="col-lg-2">
+            <div id="menu_component">
+                <ul class="list-group">
+                    <!--Separateur-->
+                    <li
+                        class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
+                        MON PLANNING</li>
+                    <!-- Menu évenements -->
+                    <a id="view_calendar_menu_item" href="" data-toggle="collapse" aria-expanded="false"
+                        class="list-group-item list-group-item-action flex-column align-items-start">
+                        <span class="glyphicon glyphicon-calendar"></span> Calendrier</a>
+                    <a id="view_week_menu_item" href="" data-toggle="collapse" aria-expanded="false"
+                        class="list-group-item list-group-item-action flex-column align-items-start">
+                        <span class="glyphicon glyphicon-time"></span> Ma semaine</a>
+                    <a id="view_list_menu_item" href="#submenu2" data-toggle="collapse" aria-expanded="false"
+                        class="list-group-item list-group-item-action flex-column align-items-start">
+                        <span class="glyphicon glyphicon-list-alt"></span> Mes listes</a>
+                    <!--Sous menu des listes-->
+                    <div id='submenu2' class="collapse sidebar-submenu">
+                        <a href="" class="list-group-item list-group-item-action sous-menu">To-do list</a>
+                        <a href="" class="list-group-item list-group-item-action sous-menu">Mes dépenses</a>
+                    </div>
+                    <!-- Séparateur -->
+                    <li
+                        class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
+                        AUTRES</li>
+                    <a id="view_calendar_menu_item" href="" data-toggle="collapse" aria-expanded="false"
+                        class="list-group-item list-group-item-action flex-column align-items-start">
+                        <span class="glyphicon glyphicon-log-out"></span> Logout</a>
+                </ul><!-- List Group END-->
+
+            </div>
+        </div><!-- sidebar-container END -->
+
+        <div class="offset-lg-1 col-lg-9">
+            <div id="todo_list_component">
+                <h1>Mes to-do lists</h1>
+                <div class="todo_list">
+                    <div class="todo_list_title">
+                        <p>Ma première to-do list!</p>
+                        <form action="" method="POST" id="teste" class="todo_list_add_form">
+                            <input type="text" class="todo_list_input" placeholder="Entrez ici une nouvelle tâche..."
+                                required pattern="^.+$">
+                            <button type="submit" class="todo_list_addBtn">Ajouter</button>
+                        </form>
+                    </div>
+                    <ul class="todo_list_ul">
+                    </ul>
+                </div>
+
+                <div class="todo_list">
+                    <div class="todo_list_title">
+                        <p>Ma première to-do list!</p>
+                        <form action="" method="POST" id="teste" class="todo_list_add_form">
+                            <input type="text" class="todo_list_input" placeholder="Entrez ici une nouvelle tâche..."
+                                required pattern="^.+$">
+                            <button type="submit" class="todo_list_addBtn">Ajouter</button>
+                        </form>
+                    </div>
+                    <ul class="todo_list_ul">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Imports javascript-->
+    <script src="./bootstrap/jquery.min.js"></script>
+    <script src="./bootstrap/bootstrap.min.js"></script>
+    <script src="./bootstrap/popper.min.js"></script>
+    <script src="./myJS.js"></script>
+
+</body>
+
+</html>
